@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CourseController@index');
+Route::get('/angular', 'CourseController@angular');
+Route::get('/algolia', 'CourseController@algolia');
